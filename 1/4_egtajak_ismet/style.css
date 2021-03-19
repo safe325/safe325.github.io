@@ -1,0 +1,24 @@
+main {
+  border: 5px solid #4285f4;
+  color: white;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  padding: 0;
+  font-family: 'Nerko One', cursive;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-wight: bold;
+}
+p {
+  height: 65px;
+  padding-top: 35px;
+  margin: 0;
+}
+.north {
+  background: #E67676;
+}
+.south {
+  background: #A9E6E6;
+}

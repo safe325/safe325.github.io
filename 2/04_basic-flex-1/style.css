@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  width: 450px;
+  height: 150px;
+  margin: 10px;
+}
+.item {
+  width: 150px;
+  height: 150px;
+}
+.green {
+  background: #51d400;
+}
+.yellow {
+  background: #ffd62a;
+}
+.purple {
+  background: #b02afe
+}

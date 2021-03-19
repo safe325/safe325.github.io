@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  width: 900px;
+  height: 50px;
+  background: purple;
+}
+header nav {
+  width: 100px;
+  height: 30px;
+  background: cyan;
+  align-items: center;
+  margin: 10px
+}
+div {
+  display: flex;
+  width: 900px;
+  height: 500px;
+}
+.yellow {
+  height: 500;
+  background: yellow;
+  flex-grow: 4;
+}
+.lime {
+  height: 500;
+  background: lime;
+  flex-grow: 1;
+}

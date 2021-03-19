@@ -1,0 +1,13 @@
+html {
+  font-family: 'Sen', sans-serif;
+}
+div {
+  display: flex;
+}
+section {
+  width: 205px;
+  text-align: center;
+}
+a {
+  display: block;
+}

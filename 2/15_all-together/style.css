@@ -1,0 +1,45 @@
+#main {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  justify-content: center;
+}
+header {
+  width: 500px;
+  height: 75px;
+  background: aqua;
+}
+#body {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+nav {
+  width: 75px;
+  height: 500px;
+  background: orange;
+}
+article {
+  display: flex;
+  width: 300px;
+  height: 500px;
+  background: red;
+  justify-content: end;
+  align-items: end;
+}
+section {
+  width: 40px;
+  height: 40px;
+  background: black;
+  margin: 10px;
+}
+aside {
+  width: 75px;
+  height: 500px;
+  background: purple;
+}
+footer {
+  width: 500px;
+  height: 75px;
+  background: blue;
+}

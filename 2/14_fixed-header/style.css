@@ -1,0 +1,47 @@
+header {
+  display: flex;
+  width: 900px;
+  height: 70px;
+  background: purple;
+  padding-left: 100px;
+  position: fixed;
+  top: 0;
+}
+header nav {
+  width: 80px;
+  height: 30px;
+  background: cyan;
+  align-items: center;
+  margin: 20px 20px 0 0
+}
+#second {
+  width: 100px;
+}
+div {
+  display: flex;
+  width: 800px;
+  height: 500px;
+  flex-direction: row-reverse;
+  position: relative;
+  top: 70px;
+  left: 100px;
+  z-index: -100;
+}
+.yellow {
+  height: 500;
+  background: yellow;
+  flex-grow: 4;
+}
+.lime {
+  height: 500;
+  background: lime;
+  flex-grow: 1;
+}
+footer {
+  width: 800px;
+  height: 80px;
+  background: lightgrey;
+  position: relative;
+  top: 80px;
+  left: 100px;
+}
