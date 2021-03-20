@@ -26,7 +26,7 @@ header {
   background-size: cover; /* a háttérkép átméretezése, hogy teljesen kitöltse a dobozt */
   background-position: center;
   height: 400px;
-  margin-right: 10px; /* a böngésző határozza meg a jobb margót */
+  margin-right: 10px; 
   margin-left: auto; /* a böngésző határozza meg a bal margót */
   position: relative; /* a tartalmazó dobozhoz képest helyezkedik el */
 }
