@@ -12,13 +12,24 @@
         li {
             background: lightblue;
         }
+        .kontener {
+            display: flex;
+        }
+        .doboz {
+            width: 100px;
+            height: 100px;
+        }
     </style>
 </head>
 <body>
     <h1>Betöltött a HTML</h1>
+    <div class="kontener"></div>
+    
+    <button id="hozzaado">Még egy li</button>
+    <button id="torlo">Töröljünk egy lit</button>
     <ul>
         <li>hello</li>
-        <li class="sarga">hello</li>
+        <li class="sarga">hello<p>másik p tag</p></li>
         <li>hello</li>
         <li>hello</li>
     </ul>
