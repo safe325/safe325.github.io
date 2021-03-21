@@ -3,8 +3,7 @@ let azEnKorom = 10
 console.log('A JavaScript is betöltött')
 
 // egy egy egysoros komment
-/*
-tobb soros komment
+/* tobb soros komment
 fejlesztoi eszkoztar a bongeszoben: Ctrl-Shift-I
 */
 
@@ -20,8 +19,28 @@ if (azEnKorom >= 21) {
 
 let masikKor = 18
 
-if (masikKorom === 18) {
+if (masikKor === 18) {
     console.log('Pont tizennyolc')
 }
 
 console.log('Ez itt a vege')
+
+// jQuerys resz
+
+console.log($("h1").text())
+$("h1").text('Ezt JavaScriptbol valtoztattuk meg')
+
+if (azEnKorom >= 21) {
+    $("h1").text('Legalabb 21 eves')
+} else if (azEnKorom >= 18) {
+    $("h1").text('Nagykoru')
+} else {
+    $("h1").text('Nem nagykoru')
+}
+
+console.log($(".sarga").css('background-color'))
+$("li").css('background-color','lime')
+$(".sarga").css('background-color','magenta')
+$("p").html('alma, ami <strong>nagyon</strong> fontos')
+$("ul").append('<li>ujabb elem</li>')
+$(".sarga").remove()
