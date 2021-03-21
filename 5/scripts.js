@@ -39,8 +39,21 @@ if (azEnKorom >= 21) {
 }
 
 console.log($(".sarga").css('background-color'))
-$("li").css('background-color','lime')
-$(".sarga").css('background-color','magenta')
+//$("li").css('background-color','lime')
+//$(".sarga").css('background-color','magenta')
 $("p").html('alma, ami <strong>nagyon</strong> fontos')
-$("ul").append('<li>ujabb elem</li>')
-$(".sarga").remove()
+$("li:last-of-type").remove()
+$("li:last-of-type").toggleClass('sarga') //kapcsoló
+// függvény létrehozása: function vagy =>
+function adjHozzaEgyLit(){
+    $("ul").append('<li>ujabb elem</li>')
+} // függvény meghívása:
+// $('button').click(adjHozzaEgyLit)
+//vagy így:
+$('#hozzaado').click(function(){
+    $("ul").append('<li>ujabb elem</li>')
+})
+
+$('#torlo').click(() => {
+    $("li:last-of-type").remove()
+})
