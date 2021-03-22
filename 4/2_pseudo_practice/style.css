@@ -1,0 +1,16 @@
+div {
+    width: 30%;
+    border: solid 2px black;
+    border-top: 1px;
+    margin: 0;
+    padding: 3%
+}
+div:hover {
+    background: orange;
+}
+#fent {
+    border-top: 0;
+}
+#lent {
+    border-bottom: 0;
+}

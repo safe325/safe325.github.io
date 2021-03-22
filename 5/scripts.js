@@ -4,7 +4,7 @@ console.log('A JavaScript is betöltött')
 
 // egy egy egysoros komment
 /* tobb soros komment
-fejlesztoi eszkoztar a bongeszoben: Ctrl-Shift-I
+fejlesztoi eszkoztar a bongeszoben: F12 vagy Ctrl-Shift-I
 */
 
 //relaciojelek: >, <, >=, <= 
@@ -56,4 +56,24 @@ $('#hozzaado').click(function(){
 
 $('#torlo').click(() => {
     $("li:last-of-type").remove()
+})
+
+for (let i = 0; i < 100; i = i + 1) {
+    $("ul").append(`<li>${i+1}. Jót s jól, ebben áll a nyagy titok.</li>`)
+}
+
+let szinek = ['orange', 'magenta', 'red', 'brown', 'green', 'blue', 'teal']
+
+function egySzinDoboz(szin) {
+    $('.kontener').append('<div class="doboz"></div>')
+    $('.kontener div:last-of-type').css('background-color', szin)
+}
+
+egySzinDoboz('lime')
+egySzinDoboz('pink')
+
+szinek.forEach(egySzinDoboz) 
+szinek.forEach(function (szin) {
+    $('.kontener').append('<div class="doboz"></div>')
+    $('.kontener div:last-of-type').css('background-color', szin)
 })
