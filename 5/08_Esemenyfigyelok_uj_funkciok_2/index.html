@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eseményfigyelők új funkciókkal, 1. feladat</title>
+    <title>Eseményfigyelők új funkciókkal, 2. feladat</title>
 </head>
 <body>
     <form action="">
@@ -22,9 +22,10 @@
             $('#button1').text('1.gomb')
         })
         let szin = document.getElementById("bevitel").value
-        $('#button3').click(() => {
-            $('button').css('background',szin)
-        })
+        if (szin === 'blue') {
+            $('#button3').click(() => {
+                $('button').css('background',szin)
+            })}
     </script>
 </body>
 </html>
