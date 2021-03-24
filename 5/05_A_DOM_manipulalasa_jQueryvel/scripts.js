@@ -4,11 +4,11 @@ nevek.forEach((nev) => {
         `<li>${nev}</li>`
     )
 })
+$('li').eq(10).css('font-weight','bold')
 let additionalBlock = {
     title: "Beillesztve JavaScripttel",
     text: "Ez a blokk a JavaScript jQuery könyvtárával lett beillesztve. Király!"
   }
-$('li').eq(10).css('font-weight','bold')
 $('body').append(
     `<h1>${additionalBlock.title}</h1>`
 )
