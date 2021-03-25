@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számláló</title>
+</head>
+<body>
+    <header>
+        <h1>Számláló</h1>
+        <h2>0</h2>
+    </header>
+    <button id='fel'>Növelés</button>
+    <button id='le'>Csökkentés</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        let szamlalo = 0
+        $('#fel').on('click',() => {
+            szamlalo += 1
+            $('h2').text(szamlalo)
+        })
+        $('#le').on('click',() => {
+            szamlalo -= 1
+            $('h2').text(szamlalo)
+        })
+    </script>
+</body>
+</html>
