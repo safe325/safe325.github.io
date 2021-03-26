@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form {
+            display: flex;
+        }
+        span {
+            flex-grow: 1;
+        }
+    </style>
+    <title>Simple todo list</title>
+</head>
+<body>
+    <header>
+        <h1>Egyszerű feladatlista</h1>
+        <h2>Feladatok</h2>
+    </header>
+    <ul>
+        <li><span>Buy milk</span></li>
+    </ul>
+    <form>
+        <input type="text" id="bevitel">
+        <input type="button" id="add" value="Add todo">
+    </form>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $('#add').click(() => {
+                let tartalom = $('#bevitel').val()
+                $('ul').append(`<li>${tartalom}</li>`);
+            });
+            $('li').click((event) => {
+                $(event.target.parentElement).css('text-decoration','line-through');
+            });
+        })
+    </script>
+</body>
+</html>
