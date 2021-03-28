@@ -62,42 +62,35 @@ body{
 
 #thumbnails{
     display: flex;
-    height:74px;
+    height:124px;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
 .thumbnail{
-    width: 50px;
-    height: 50px;
-    border: 3px solid white;
-    border-radius: 10px;    
+    width: 70px;
+    height: 100px;
+    border: 3px solid white;   
     overflow: hidden;    
     box-shadow: 0px 15px 5px -10px rgba(0, 0, 0, 0.7);
 }
 .thumbnail > img{
-    height: 100%;
+    height: 60px;
     
 }
 
 
-.HiddenTitle {
-    font-size: 18px;
-    text-align: center;
+.title {
+    width:60px;
+    height: 50px;
+    display: none;
+    position: relative;
+    background: grey;
     color: white;
-    font-family: 'Spectral SC', serif;
-    background: gray;
-    border-radius: 5px;
-    padding: 5px;
-    margin-top: 6px;
-    display: none;    
+    font-size: 0.8em;
   }
   
-  .thumbnail:hover .HiddenTitle {
+  .thumbnail:hover .title {
     display: block;
-  }
-  
-  .thumbnail:hover .thumbnail {
-    box-shadow: 12px 12px 24px rgb(32, 32, 32);
   }

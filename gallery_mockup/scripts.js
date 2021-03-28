@@ -14,12 +14,12 @@ $(function(){
          },
          {
              photo: 'images/03.jpg',
-             title: 'Pipacsok naplementében',
+             title: 'Pipacsok',
              description: 'Forrás: https://cdn.pixabay.com/photo/2015/06/19/20/13/sunset-815270_960_720.jpg'
          },
          {
             photo: 'images/04.jpg',
-            title: 'Tarka virágos mező',
+            title: 'Tarka mező',
             description: 'Forrás: https://cdn.pixabay.com/photo/2014/01/22/19/44/flower-field-250016_960_720.jpg'
         },
         {
@@ -39,7 +39,7 @@ $(function(){
         },
         {
             photo: 'images/08.jpg',
-            title: 'Tél és tavasz az Alpokban',
+            title: 'Tél és tavasz',
             description: 'Forrás: https://cdn.pixabay.com/photo/2015/05/08/08/49/mountains-757731_960_720.jpg'
         },
         {
@@ -49,19 +49,10 @@ $(function(){
         },
         {
             photo: 'images/10.jpg',
-            title: 'Tulipánok és nárciszok',
+            title: 'Tulipánok, nárciszok',
             description: 'Forrás: https://cdn.pixabay.com/photo/2016/02/13/10/35/tulips-1197602_960_720.jpg'
         },
-        {
-            photo: 'images/11.jpg',
-            title: 'Cseresznyevirágok Japánban',
-            description: 'Forrás: https://cdn.pixabay.com/photo/2017/03/23/16/48/japanese-cherry-trees-2168858_960_720.jpg'
-        },
-        {
-            photo: 'images/12.jpg',
-            title: 'Cinege virágokkal',
-            description: 'Forrás: https://cdn.pixabay.com/photo/2017/05/08/13/15/spring-bird-2295434_960_720.jpg'
-        },
+        
      ];
  
      let loadImage = (ind) => {
@@ -90,8 +81,8 @@ $(function(){
 
      //thumbnail-ok legenerálása
      imagesData.forEach((item, index) => {
-        $('#thumbnails').append(`<div class="thumbnail" data-number="${index}">
-            <img src="${item.photo}" data-number="${index}" alt=""> <div class="HiddenTitle">${item.title}</div></div> `);
+        $('#thumbnails').append(`<div class="thumbnail" data-number="${index}"> 
+            <img src="${item.photo}" data-number="${index}" alt=""> <div class="title">${item.title}</div> </div>`);
         $('.thumbnail').click((event) => {
              let ind = parseInt($(event.target).attr('data-number'));
              loadImage(ind);
