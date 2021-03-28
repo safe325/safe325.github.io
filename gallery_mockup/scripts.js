@@ -68,6 +68,8 @@ $(function(){
      $('#la').click(() =>{
          if(currentPhoto>0){
             currentPhoto--;
+         } else {
+             currentPhoto=imagesData.length-1;
          }
          loadImage(currentPhoto);
      });
@@ -75,10 +77,12 @@ $(function(){
      $('#ra').click(() =>{
          if(currentPhoto<imagesData.length-1){
              currentPhoto++;
-         }        
+         } else {
+             currenthPhoto=0;
+         }
          loadImage(currentPhoto);
      });
-
+loadImage(currentPhoto);
      //thumbnail-ok legenerálása
      imagesData.forEach((item, index) => {
         $('#thumbnails').append(`<div class="thumbnail" data-number="${index}"> 
