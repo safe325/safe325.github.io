@@ -78,7 +78,7 @@ $(function(){
          if(currentPhoto<imagesData.length-1){
              currentPhoto++;
          } else {
-             currenthPhoto=0;
+             currentPhoto=0;
          }
          loadImage(currentPhoto);
      });
