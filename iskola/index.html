@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salánki Ferenc honlapja</title>
+    <!--link rel="stylesheet" href="stilus.css"-->
+    <style>
+        body {
+            background-image: url(https://images.wallpaperscraft.com/image/stars_universe_space_118205_1280x720.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            overflow: hidden;
+            color: #fff;
+            @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+            font-family: 'Work Sans', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            color: #fff;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        li {
+            list-style-type: none;
+        } 
+        nav {
+            font-size: 10px;
+            font-family: Arial;
+        }  
+        .menupont {
+            border-left-style: solid;
+            border-left-width: thin;
+            padding: 5px 10px;
+        }
+        .menupont:hover {
+            font-size: 15px;
+            font-weight: bold;
+            background-color: blue;
+        }
+        ul {
+            display: flex;
+        }
+        li {
+           font-size: 16px;
+           font-family: Arial;
+           background-color: rgba(0, 0, 0, 0.5);
+           padding: 10px 15px;
+           border: outset thick black;
+           margin: 10px;
+        }
+        li:hover {
+           font-style: italic;
+           background-color: green;
+           border-color: green;
+        }
+        li:active {
+           border: inset;
+        }
+        @media (max-width: 700px) {
+           p {
+                  color: red;
+                  text-align: center;
+             }
+           ul {
+                  flex-wrap: wrap;
+                  justify-content: center;
+              }
+           h1 {
+                  text-align: center;
+              }
+        }
+        @media (max-height: 700px) {
+              nav {
+                       display: none;
+                   }
+        }
+        video {
+                   position: absolute;
+                   z-index: -100;
+                   min-height: 100%;
+                   min-width: 100%;
+               }
+    </style>
+</head>
+<body>
+<video src="https://www.pexels.com/video/6981415/download/?search_query=nature%20background&tracking_id=qeo3oib185" autoplay muted loop></video>
+ <nav>
+     <a class="menupont" href="https://developer.mozilla.org/hu/">Dokumentáció</a>
+     <a class="menupont" href="https://www.w3schools.com/">Tutoriál</a>
+     <a class="menupont" href="https://fonts.google.com/">Karakterkészletek</a>
+     <a class="menupont" href="http://flexboxfroggy.com/#hu">Flexbox-játék</a>
+     <a class="menupont" href="https://css-tricks.com/">CSS trükkök</a>
+     <a class="menupont" href="https://www.pexels.com/videos/">Rövid videók</a>
+     <a class="menupont" href="https://hwellkft.hu/ingyenes-kepek-letoltese">Ingyenes képek</a>
+ </nav>
+ <h1>Üdvözöllek a honlapomon</h1>   
+ <p>A webszerkesztés alapjainak megismerése során a következő
+     témakörökkel foglalkoztunk:
+ </p>
+ <p>A tárgyalt témakörök:</p>
+ <ul>
+     <li><a href="http://tamop412.elte.hu/tananyagok/weblapkeszites/lecke5_lap1.html">Alapok</a></li>
+     <li><a href="http://tamop412.elte.hu/tananyagok/weblapkeszites/lecke5_lap2.html">Listák</a></li>
+     <li><a href="http://tamop412.elte.hu/tananyagok/weblapkeszites/lecke8_lap1.html">Táblázatok</a></li>
+     <li><a href="http://tamop412.elte.hu/tananyagok/weblapkeszites/lecke6_lap1.html">Képek</a></li>
+     <li><a href="http://tamop412.elte.hu/tananyagok/weblapkeszites/lecke6_lap2.html">Képtérkép</a></li>
+     <li><a href="http://tamop412.elte.hu/tananyagok/weblapkeszites/lecke6_lap4.html">Videók</a></li>
+ </ul>
+ <p>Az adott témakörben elkészített weblapok:</p>
+ <ul>
+     <li><a href="1.html">Alapok</a></li>
+     <li><a href="2.html">Listák</a></li>
+     <li><a href="3.html">Táblázatok</a></li>
+     <li><a href="4.html">Képek, képtérkép</a></li>
+     <li><a href="5.html">Videók</a></li>
+     <li><a href="javascript.html">JavaScript</a></li>
+ </ul>
+<button id="gomb1">Első gomb (Kattints egyet rajta!)</button>
+<button id="gomb2">Második gomb (Kattints duplán rajta!)</button>
+<button id="gomb3">Harmadik gomb (Csak vidd rá az egérkurzort!)</button>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script>
+$('#gomb1').on('click',() => {
+$('h1').text('Az első gombon kattintottál és a hátterem kék lett')
+$('h1').css('background-color','blue')
+})
+$('#gomb2').on('dblclick',() => {
+$('h1').text('A második gombon duplán kattintottál és a bekezdések eltűntek')
+$('p').css('display','none')
+})
+$('#gomb3').on('mousemove',() => {
+$('h1').text('A harmadik gombra rámentél és a felsorolások linkjei sárgák lettek')
+$('ul li a').css('color','yellow')
+})
+     console.log('JavaScript alapok')
+     let myVariable = 5
+     console.log('let myVariable = 5, myVariable =',myVariable)
+     console.log('Műveletek (operátorok) számokkal')
+     console.log('összeadás: 5.1 + 6.4 =',5.1+6.4)
+     console.log('kivonás: 5.4 - 4.5 =',5.4-4.5)
+     console.log('szorzás: 4 * 5 =',4*5)
+     console.log('osztás: 10 / 4 =',10/4)
+     console.log('osztás: 10 / 0 =',10/0,'azaz: "végtelen"')
+     console.log('osztás maradéka (modulo): 10 % 3 =',10%3)
+     console.log('Példa: Ha a szökőéveket nem számoljuk, 100 évben',100*365*24*60*60,'másodperc van.')
+     console.log('Logikai műveletek (operátorok) és igazságtáblázatuk')
+     console.log('Logikai értékek: true (igaz, igen, 1), false (hamis, nem, 0)')
+     console.log('&& (AltGr-C), and, és')
+     console.log('true && true =',true && true)
+     console.log('1 && 1 =',1 && 1)
+     console.log('true && false =',true && false)
+     console.log('1 && 0 =',1 && 0)
+     console.log('0 && 1 =',0 && 1)
+     console.log('0 && 0 =',0 && 0)
+     console.log('|| (AltGr-W), or, vagy')
+     console.log('1 || 1 =',1 || 1)
+     console.log('1 || 0 =',1 || 0)
+     console.log('0 || 1 =',0 || 1)
+     console.log('0 || 0 =',0 || 0)
+     console.log('! (Shift-4), not, nem, negálás, tagadás')
+     console.log('!1 =',!1)
+     console.log('!0 =',!0)
+     console.log('Összehasonlítások (relációjelek)')
+     console.log('Egyenlő az értékük: "6" == 6 =',"6" == 6)
+     console.log('Egyenlő az értékük, de a típusuk nem: "6" === 6 =',"6" === 6)
+     console.log('Egyenlő az értékük és a típusok: "6" === "6" =',"6" === "6",'és 6 === 6 =',6===6)
+     console.log('Nem egyenlő: "5" !== 5 =',"5" !== 5)
+     console.log('Nem egyenlő: 5 !== 5 =',5 !== 5)
+     console.log('Nagyobb: "5" > 4 =',"5" > 4)
+     console.log('Kisebb: "5" < "6" =',"5" < "6")
+     console.log('Nagyobb vagy egyenlő: 5 >= 5 =',5 >= 5)
+     console.log('Kisebb vagy egyenlő: 5 <= 4 =',5 <= 4)
+     console.log('String (karaktersorozat, karakterlánc)')
+     let string1 = "Helló"; let string2 = 'világ'
+     console.log('Értékadás: let string1 = "Helló"',"vagy: let string2 = 'világ'")
+     console.log('String operátorok (műveletek)')
+     console.log('+ (összefűzés, konkatenáció)')
+     console.log(string1 + ' ' + string2 + "!")
+     console.log('Ugyanez másképp:')
+     console.log('`Helló, ${string2}!`:',`Helló, ${string2}!`)
+     console.log('string1.length =',string1.length)
+     console.log('"Salánki Ferenc".length =',"Salánki Ferenc".length)
+     console.log('Adatszerkezet (data structure): egyszerű (primitív) adatok meghatározott tulajdonságú halmaza')
+     console.log('Tömb (array): tetszőleges típusú adatok sorozata. Az egyes adatokra (értékekre, elemekre) a sorszáma (indexe) segítségével hivatkozhatunk. A legelső elem indexe: 0')
+     console.log('Néhány tömb operátor (művelet):')
+     valami = ["kék", 3, 5.6, true]
+     console.log('A valami nevű tömb létrehozása: valami = ["kék", 3, 5.6, true] és kiírása: ',valami)
+     console.log('A valami nevű tömb 2. elemének elérése (indexelése): valami[1] =',valami[1])
+     console.log('A valami nevű tömb hossza (elemeinek száma): valami.length =', valami.length)
+     console.log('A valami nevű tömb 1. elemének hossza: valami[0].length = ',valami[0].length)
+     console.log('A valami nevű tömb 2. elemének hossza: valami[1].length = ',valami[1].length)
+     console.log('A valami nevű tömb 1. elemének megváltoztatása pirosra: valami[0] = "piros"',valami[0] = "piros", valami)
+     console.log('A valami nevű tömbben 5.6 értékű elem indexe: valami.indexOf(5.6) = ',valami.indexOf(5.6))
+     console.log('Egy elem hozzáadása a valami nevű tömb végéhez: valami.push(12)', valami.push(12), valami)
+     console.log('Egy elem törlése a valami nevű tömb végéről: valami.pop()', valami.pop(), valami)
+     console.log('Egy elem hozzáadása a valami nevű tömb elejéhez: valami.unshift(false)', valami.unshift(false), valami)
+     console.log('Egy elem törlése a valami nevű tömb elejéről: valami.shift()', valami.shift(), valami)
+     console.log('Objektum (object): kulcs - érték (key - value) párok (adatmezők) sorozata. Az egyes értékeket nem a sorszámuk, hanem a kulcsuk (az adatmező neve) segatségével tudjuk elérni')
+     console.log('Feladat: Hozzunk létre egy person (személy) nevű objektumot, amellyel néhány személyes adatot tárolhatunk: name (név), age (életkor), class (osztály)!')
+     let person = {
+         name: "Próba Géza",
+         age: 14,
+         class: "7. a",
+     }
+     console.log('     let person = {')
+     console.log('         name: "Próba Géza",')
+     console.log('         age: 14,')
+     console.log('         class: "7. a",')
+     console.log('     }')
+     console.log(person)
+     console.log('Az osztály (a "class" nevű adatmező értékének) lekérdezése:')
+     console.log('person["class"]: ',person["class"],'vagy: person.class: ',person.class)
+     console.log('Egy új adatmező hozzáadása, amelynek neve: "kedvenc", értéke pedig a kedvenc tantárgy neve.')
+     console.log('person.kedvenc = "informatika"',person.kedvenc = "informatika")
+     console.log('Az új objektum:',person)
+     console.log('Programvezérlési szerkezet: olyan programegység, amelynek alkalmazása lehetővé teszi, hogy a leírt utasítások ne egymás után (szekvenciálisan) legyenek végrehajtva. Ilyen pl.: a feltételes elégazás és a ciklus.')
+     console.log('Feltételes elágazás:')
+     console.log('Feladat: Hozzunk létre egy "nevek" nevű tömböt!')
+     let nevek = ['Szende', 'Szundi', 'Tudor', 'Vidor', 'Morgó', 'Hapci', 'Kuka']
+     console.log("let nevek = ['Szende', 'Szundi', 'Tudor', 'Vidor', 'Morgó', 'Hapci', 'Kuka'], nevek: ", nevek)
+     console.log('Feladat: Írassuk ki, hogy a "nevek" nevű tömb 5-nél több mevet tartalmaz-e vagy nem!')
+     if (nevek.length > 5) {
+         console.log("Több, mint 5 törpe van felsorolva.")
+     } else {
+         console.log("Nem több, mint 5 törpe van felsorolva.")
+     }
+     console.log('Feladat: Írassuk ki, hogy a "nevek" nevű tömbben szereplő harmadik név 5-nél több karaktert tartalmaz-e vagy nem!')
+     if (nevek[2].length > 5) {
+         console.log(nevek[2],"hosszabb, mint 5 karakter.")
+     } else {
+         console.log(nevek[2],"nem hosszabb, mint 5 karakter.")
+     }
+     console.log('Kérdés: Mit ír ki a következő kódrészlet és miért?')
+     let a = 7
+     if (a < 5) {
+         console.log(a / 2)
+     } else {
+         console.log(a * 2)
+     }
+     console.log('Azért, mert 7 < 5 nem igaz, ezért az else ág fut le: 7 * 2 = 14-et ír ki.')
+     console.log('Kérdés: Mit kell megváltoztatni ahhoz, hogy 1-et írjon ki?')
+     a = 2
+     if (a < 5) {
+         console.log(a / 2)
+     } else {
+         console.log(a * 2)
+     }
+     console.log('A "let a = 7" utasítást ki kell cserélni az "a = 2" utasításra. (A "let" azért nem kell, mert a már létező változónak új értéket adunk.)')
+     console.log('Ciklus (loop): olyan kódrészlet, amely egyzer leírt, de többször végrehajtandó utasítássorozatot tartalmaz. Részei: ciklusmag (a többször végrehajtandó utasítássorozat, a JavaScript-ben a { és } között van), ciklusfej (a ciklusmag végrehajtásának módját szabályozza, a JavaScript-ben a ( és ) között van). Fő típusai a JavaScript-ben: elöltesztelő (while), ahol a ciklusfeltétel a ciklusmag előtt van a kódban; hátultesztelő (do - while), ahol a ciklusfeltétel a ciklusmag után van a kódban; számlálós vagy bejárós (for vagy forEach), ahol a ciklusfeltételben azt adjuk meg, hogy a ciklusmag hányszor kerüljön végrehajtásra.')
+     console.log('Feladat: Hozzunk létre egy while-ciklust, ami kiírja az egész számokat 0-tól 9-ig!')
+     let i = 0
+     while (i <= 9) {
+         console.log(i)
+         i = i + 1
+     }
+     console.log('Feladat: Hozzunk létre egy do - while ciklust, ami kiírja a számokat 1-től 10-ig!')
+     let j = 1
+     do {
+         console.log(j)
+         j++
+     } while (j <= 10)
+     console.log('Feladat: Hozzunk létre egy for ciklust, ami kiírja a páros számokat 0-tól 20-ig!')
+     for (let k = 0; k <= 20; k += 2) {
+         console.log(k)
+     }
+     console.log('Feladat: Hozzunk létre egy forEach ciklust, ami kiírja a szivárvány fő színeit!')
+     let szivarvany = ['vörös', 'narancs', 'sárga', 'zöld', 'kék', 'ibolya']
+     szivarvany.forEach((szin) => {
+         console.log(szin)
+     })
+     console.log('Függvény (function): Olyan programrész (kódblokk), amelyet a program különböző helyein, különböző feltételektől függően, lényegében ugyanúgy hajtunk végre. A függvények többsége a futás után valamilyen bemenő érték (paraméter) felhasználásával valamilyen kimenő értéket ad vissza.')
+     console.log('Feladat: Hozzunk létre egy függvényt, amely egy téglalap két oldalának a hosszából kiszámítja a kerületét!')
+     let kerulet = (a, b) => {
+         return 2*(a+b)
+     }
+     console.log('Példa:', 3, 'és', 4, 'oldalú téglalap kerülete:',kerulet(3,4))
+     console.log('Feladat: Hozzunk létre egy függvényt, amely 1-től n-ig összeadja az egész számokat!')
+     let osszegEgytolEddig = (n) => {
+         szumma = 0
+         for (let i = 1; i <= n; i++) {
+             szumma += i
+         }
+         return szumma
+     }
+     console.log('Példa: 1-től', 100, '-ig az egész számok összege:', osszegEgytolEddig(100))
+     console.log('Feladat: Hozzunk létre egy "udvozollek" nevű függvényt, amely egy nevet kap paraméterként és visszatér egy személyes üdvözléssel: kiírja a Helló szót, utána szóközt követően a megadott nevet!')
+     let udvozollek = (nev) => {
+         let udvozlet = 'Helló, ' + nev
+         return udvozlet
+     }
+     console.log('Példa: udvozollek("világ!"):',udvozollek("világ!"))
+     console.log('Feladat: Hozzunk létre egy függvényt, amely egy tömböt kap paraméterként, majd sorban kiírja minden elemét!')
+     console.log('Megoldás for ciklussal:')
+     let elemekKiirasa = (tomb) => {
+         for (let i = 0; i < tomb.length; i++) {
+             console.log(tomb[i])
+         }
+     }
+     console.log('elemekKiirasa(["iskola", 8, 3.25, true]):', elemekKiirasa(["iskola", 8, 3.25, true]))
+     console.log('Megoldás forEach ciklussal:')
+     let ElemekKiirasa = (tomb) => {
+         tomb.forEach((elem) => {
+              console.log(elem)   
+         })
+     }
+     console.log('ElemekKiirasa(["iskola", 8, 3.25, true]):', ElemekKiirasa(["iskola", 8, 3.25, true]))
+ </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

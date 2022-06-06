@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számláló</title>
+</head>
+<body>
+    <h1>Kézi számláló</h1>
+    <h2>0</h2>
+    <button id="fel">Növel</button>
+    <button id="le">Csökkent</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        let szamlalo = 0
+        $('#fel').on('click',() => {
+            szamlalo++
+            $('h2').text(szamlalo)
+        })
+        $('#le').on('click',() => {
+            szamlalo--
+            $('h2').text(szamlalo)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+body {
+    background-color: yellow;
+}
+h1 {
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 150%;
+    text-align: center;
+}
+q, blockquote {
+    background-image: url(kepek/hatter.gif);
+    background-attachment: fixed;
+}
+ul li {
+    list-style-type: square;
+}
+ol li {
+    list-style-type: lower-greek;
+}
+th {
+    border: medium black groove;
+    padding: 10px;
+    margin: 0;
+}
+td {
+    border: solid thin gray;
+    margin:0;
+}
+.first {
+    border: 2px solid #ee2e26;
+    border-radius: 10px;
+    background-color: #f60;
+    box-shadow: #930 7px 6px 10px 5px inset;
+}
+caption {
+    background-color: #000;
+    color: #fff;
+    font-size: 80px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #fff,
+    0 0 20px #ff00de,
+    0 0 35px #ff00de,
+    0 0 40px #ff00de,
+    0 0 50px #ff00de,
+    0 0 70px #ff00de;
+}
+#tavasz {
+    background-color: #000;
+    color: #fff;
+    font-size: 80px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #fefcc9,
+    5px -5px 15px #feec85,
+    -10px -10px 20px #ffae34,
+    10px -20px 25px #ec760c,
+    -10px -30px 30px #cd4606,
+    0 -40px 35px #973716,
+    5px -45px 40px #451b0e;
+
+}
