@@ -34,10 +34,14 @@ td {
     background-color: #f60;
     box-shadow: #930 7px 6px 10px 5px inset;
 }
+table {
+    width: 50%;
+    margin: 5%;
+}
 caption {
     background-color: #000;
     color: #fff;
-    font-size: 80px;
+    font-size: 300%;
     font-weight: bold;
     text-shadow: 0 0 5px #fff,
     0 0 10px #fff,
