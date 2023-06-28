@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igemutató</title>
+    <link rel="stylesheet" href="stilus.css">
+</head>
+<body>
+    <a href="index.html">Vissza a honlapra!</a>
+    <p>(Forrás és leírás: <a href="http://molnarm.github.io/igemutato/">https://szentiras.hu/ --> Fejlesztőknek --> Widgetek, pluginek stb. --> igemutató kiegészítő)</a></p>
+    <table>
+        <caption>Kedvenc bibliai verseim</caption>
+        <tr>
+            <th>Ószövetség</th>
+            <th>Újszövetség</th>
+        </tr>
+        <tr>
+            <td>Préd 3,1</td>
+            <td>Róm 8,28</td>
+        </tr>
+    </table>
+    <script>
+        var igemutato = {config: {forditas: 'RUF'}},
+        s = document.getElementsByTagName('script')[0],
+        e = document.createElement('script');
+        e.id = 'igemutato-script';
+        e.src = 'https://molnarm.github.io/igemutato.min.js';
+        s.parentNode.insertBefore(e, s);
+    </script>
+</body>
+</html>
