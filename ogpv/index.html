@@ -17,8 +17,13 @@
         a {
             text-decoration: none;
         }
+
+        a:hover {
+            border: outset thick black;
+            background-color: yellowgreen;
+        }
         
-        li {
+        ul li {
             list-style-type: none;
         }
         
@@ -36,11 +41,7 @@
             font-weight: bold;
         }
 
-        caption:hover {
-            border: outset thick grey;
-            background-color: yellowgreen;
-            color: blue;
-        }
+        
 
         th {
             font-size: 120%;
@@ -60,13 +61,6 @@
         .kiemelt {
             background-color: aquamarine;
         }
-
-        ol li:hover {
-            font-size: 150%;
-            width: 120%;
-            border: outset thick black;
-            background-color: yellowgreen;
-        }
     </style>
 </head>
 
@@ -78,28 +72,28 @@
             Számítógép-tudományi Társaság Tehetséggondozási Szakosztálya</a> által szervezett verseny. A 2019-2020-as
         tanévig a verseny neve Logo Országos Számítástechnikai Tanulmányi Verseny volt, a 2020-2021-es tanévben kapta
         meg a jelenlegi nevét.</p>
-    <p>A verseny <a href="http://tehetseg.inf.elte.hu/logo/index.html">honlapjáról</a> elérhető <a
+    <p><a href="http://tehetseg.inf.elte.hu/logo/index.html">A verseny honlapjáról</a> elérhető <a
             href="http://tehetseg.inf.elte.hu/logo/logo_archivum.html">archívum</a> oldalon megtalálhatók a feladatok,
         az értékelési és javítási útmutatók és az eredmények.</p>
     <p>Több, mint két évtizede készítek fel érdeklődőket erre a versenyre egy nagyon egyszerű módszerrel: a korábbi
         versenyfeladatok közül annyit oldunk meg, amennyit csak tudunk. Az elkészült sok feladatmegoldás összegyűjtése
         és rendszerezése céljából hoztam létre ezt az oldalt.</p>
     <p>A megoldásokat a következő fejlesztőkörnyezetekkel készítettük:</p>
-    <ul>
+    <ol>
         <li><a href="https://www.python.org/">Python</a> (a <a
                 href="https://docs.python.org/3/library/turtle.html#module-turtle">turtle modul </a> segítségével)</li>
         <li><a
                 href="https://help.libreoffice.org/latest/hu/text/swriter/librelogo/LibreLogo.html?DbPAR=WRITER#bm1">LibreLogo</a>
             (a <a href="https://www.libreoffice.org/download/download-libreoffice/">LibreOffice</a> Writer
             szövegszerkesztőjébe beépített programozási környezet segítségével)</li>
-    </ul>
+    </ol>
     <nav>
-        <ol>
+        <ul>
             <li id="2022-2023_fent"><a href="#2022-2023_lent">2022-2023</a></li>
             <li id="2021-2022_fent"><a href="#2021-2022_lent">2021-2022</a></li>
             <li id="2020-2021_fent"><a href="#2020-2021_lent">2020-2021</a></li>
             <li id="2019-2020_fent"><a href="#2019-2020_lent">2019-2020</a></li>
-        </ol>
+        </ul>
     </nav>
     
     <table>
@@ -159,6 +153,61 @@
 
     <table>
         <caption id="2021-2022_lent"><a href="#2021-2022_fent" >2021-2022</a></caption>
+        <tr class="teteje">
+            <th style="width: 15%;">Korcsoport</th>
+            <th colspan="2">1. forduló</th>
+            <th colspan="2">2. forduló</th>
+            <th colspan="2">3. forduló</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>Feladat</th>
+            <th>Megoldás</th>
+            <th>Feladat</th>
+            <th>Megoldás</th>
+            <th>Feladat</th>
+            <th>Megoldás</th>
+        </tr>
+        <tr class="kiemelt">
+            <th>3 - 4. évfolyam</th>
+            <td></td> <!-- 1. forduló feladatai-->
+            <td></td> <!-- 1. forduló megoldásai-->
+            <td></td> <!-- 2. forduló feladatai-->
+            <td></td> <!-- 2. forduló megoldásai-->
+            <td></td> <!-- 3. forduló feladatai-->
+            <td></td> <!-- 3. forduló megoldásai-->
+        </tr>
+        <tr>
+            <th>5 - 6. évfolyam</th>
+            <td></td> <!-- 1. forduló feladatai-->
+            <td></td> <!-- 1. forduló megoldásai-->
+            <td></td> <!-- 2. forduló feladatai-->
+            <td></td> <!-- 2. forduló megoldásai-->
+            <td></td> <!-- 3. forduló feladatai-->
+            <td></td> <!-- 3. forduló megoldásai-->
+        </tr>
+        <tr class="kiemelt">
+            <th>7 - 8. évfolyam</th>
+            <td></td> <!-- 1. forduló feladatai-->
+            <td></td> <!-- 1. forduló megoldásai-->
+            <td></td> <!-- 2. forduló feladatai-->
+            <td></td> <!-- 2. forduló megoldásai-->
+            <td></td> <!-- 3. forduló feladatai-->
+            <td></td> <!-- 3. forduló megoldásai-->
+        </tr>
+        <tr>
+            <th>9 - 12. évfolyam</th>
+            <td></td> <!-- 1. forduló feladatai-->
+            <td></td> <!-- 1. forduló megoldásai-->
+            <td></td> <!-- 2. forduló feladatai-->
+            <td></td> <!-- 2. forduló megoldásai-->
+            <td></td> <!-- 3. forduló feladatai-->
+            <td></td> <!-- 3. forduló megoldásai-->
+        </tr>
+    </table>
+
+    <table>
+        <caption id="2020-2021_lent"><a href="#2020-2021_fent" >2020-2021</a></caption>
         <tr class="teteje">
             <th style="width: 15%;">Korcsoport</th>
             <th colspan="2">1. forduló</th>
