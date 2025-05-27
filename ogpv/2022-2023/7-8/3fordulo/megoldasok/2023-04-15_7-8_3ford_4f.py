@@ -1,0 +1,68 @@
+from turtle import *
+colormode(255)
+mode("logo")
+def fac(n, h, szín):
+    speed(0)
+    szín = (100, 50, 0)
+    if n == 1:
+        pensize(n)
+        pencolor(szín)
+        fd(h)
+        rt(90)
+        for i in range(2):
+            fd(h/7)
+            lt(90)
+            fd(h/3.5)
+            lt(90)
+            fd(h/7)
+        lt(90)
+        back(h)
+    if n == 2:
+        pensize(n)
+        fd(h)
+        rt(30)
+        fac(n-1, 0.7*h, (szín[0]-20, szín[1]+35, szín[2]))
+        lt(70)
+        fac(n-1, 0.7*h, (szín[0]-20, szín[1]+35, szín[2]))
+        rt(40)
+        back(h)
+    if n > 2:
+        pensize(n)
+        fd(h)
+        rt(30)
+        fac(n-1, 0.7*h, (szín[0]-20, szín[1]+35, szín[2]))
+        lt(80)
+        fac(n-1, 0.7*h, (szín[0]-20, szín[1]+35, szín[2]))
+        rt(30)
+        fac(n-2, 0.5*h, (szín[0]-20, szín[1]+35, szín[2]))
+        rt(20)
+        back(h)
+def fae(n, h, szín):
+    speed(0)
+    pensize(n)
+    r = szín[0]
+    g = szín[1]
+    b = szín[2]
+    if n == 1:
+       pencolor(szín)
+       fd(h)
+       dot(h/3)
+       back(h)
+    if n > 1:
+        pencolor(szín)
+        fd(h/2)
+        lt(35)
+        fae(n-2, 0.5*h, (r, g+20, b))
+        rt(35)
+        pensize(n)
+        pencolor(szín)
+        fd(h/2)
+        lt(35)
+        fae(n-1, 0.6*h, (r, g+10, b))
+        rt(60)
+        fae(n-1, 0.5*h, (r, g+10, b))
+        lt(25)
+        back(h)
+fac(4, 50, (100, 50, 0))
+reset()
+fae(4, 110, (0, 100, 0))

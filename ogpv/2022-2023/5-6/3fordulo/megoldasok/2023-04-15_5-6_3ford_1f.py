@@ -1,0 +1,52 @@
+from turtle import *
+def tégla(a, b):
+    fillcolor("red")
+    begin_fill()
+    for i in range(2):
+        fd(a)
+        lt(90)
+        fd(b)
+        lt(90)
+    end_fill()
+def sokszög(a, n, szín):
+    fillcolor(szín)
+    begin_fill()
+    for i in range(n):
+        fd(a)
+        lt(360/n)
+    end_fill()
+def rombusz(a):
+    for i in range(2):
+        fillcolor("light blue")
+        begin_fill()
+        fd(a)
+        lt(60)
+        fd(a)
+        lt(120)
+        end_fill()
+def ábra(h):
+    speed(0)
+    ht()
+    tégla(2*h, h)
+    lt(150)
+    for i in range(2):
+        sokszög(h, 3, "yellow")
+        rt(60)
+        sokszög(h, 3, "yellow")
+        fd(h)
+        lt(60)
+        sokszög(h, 3, "yellow")
+        rt(90)
+        sokszög(h, 4, "lime")
+        rt(60)
+        sokszög(h, 3, "yellow")
+        fd(h)
+        lt(60)
+        rombusz(h)
+        rt(60)
+        sokszög(h, 3, "yellow")
+        fd(h)
+        lt(30)
+        sokszög(h, 4, "lime")
+        rt(60)
+ábra(50)

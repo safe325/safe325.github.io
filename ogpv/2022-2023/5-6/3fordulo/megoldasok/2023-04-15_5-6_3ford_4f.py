@@ -1,0 +1,32 @@
+from turtle import *
+colormode(255)
+mode("logo")
+speed(0)
+def faa(n, h, szín):
+    pensize(n)
+    szín[1] += 10
+    pencolor(szín)
+    if n == 1:
+        fd(h)
+        dot(h/(3.5*n))
+        back(h)
+    if n > 1:
+        fd(h)
+        up()
+        back(0.5*h)
+        down()
+        rt(20)
+        faa(n-2, 0.7*h,[szín[0],szín[1]-10,szín[2]])
+        lt(20)
+        up()
+        fd(0.5*h)
+        down()
+        lt(30)
+        faa(n-1, 0.8*h, [szín[0],szín[1],szín[2]])
+        rt(40)
+        faa(n-1, 0.8*h, [szín[0],szín[1],szín[2]])
+        lt(10)
+        up()
+        back(h)
+        down()
+faa(8, 50, [0, 100, 0])
